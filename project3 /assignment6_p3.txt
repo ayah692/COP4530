@@ -1,0 +1,16 @@
+ Complexity Analysis of clear() in Stack and evaluatePostfix
+
+1. Complexity of clear() in Stack:
+   - The Stack class uses std::vector as the underlying container.
+   - The clear() function calls std::vector::clear(),The clear function runs through each entry and destroys which has a time complexity of O(n), 
+     where n is the number of elements in the vector.
+   - Therefore, the worst-case time complexity of Stack::clear() is:
+     O(n)
+
+2. Complexity of evaluatePostfix:
+   - The evaluatePostfix function processes a postfix arithmetic expression by iterating through each token.
+   - Each token is either pushed to the stack (for operands) or involves a few pop and push operations (for operators).
+   - Since each of these stack operations (push, pop, top) is O(1), the time complexity for processing each token is O(1).
+   - If there are m tokens in the expression, the function performs O(m) operations in total.
+   - Therefore, the worst-case time complexity of evaluatePostfix is:
+     O(m)

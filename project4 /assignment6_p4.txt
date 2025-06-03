@@ -1,0 +1,23 @@
+
+Complexity Analysis for makeEmpty(BinaryNode* &t)
+The makeEmpty function traverses the binary tree from the leaf nodes to the root, deleting each node exactly once. 
+The time complexity for this operation is:
+
+Worst-case time complexity: O(N)
+
+Where N represents the total number of nodes in the binary tree. Each node is visited once, leading to linear complexity.
+
+---
+
+Complexity Analysis for Converting a Postfix Expression to Infix
+The function that converts a postfix expression into an infix expression involves iterating through each token in the 
+postfix expression and constructing a binary expression tree using a stack. The analysis is as follows:
+
+- Iteration over tokens: O(M), where M is the number of tokens in the expression.
+- Stack operations (push and pop): O(1) for each operation, performed N times, where N is the number of nodes.
+
+Since the number of tokens M is proportional to the number of nodes N, the overall time complexity for the conversion is:
+
+Worst-case time complexity: O(N)
+
+Combined Complexity: O(N)

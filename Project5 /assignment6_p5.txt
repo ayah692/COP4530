@@ -1,0 +1,14 @@
+Worst-case Time Complexity of rehash() in HashTable
+
+The worst-case time complexity of rehash() is O(n), where n is the number of elements in the hash table.
+
+Explanation:
+When rehash() is called, the hash table is resized, and all elements need to be reinserted into the new table. This means iterating over all elements, which takes O(n) time.
+
+Worst-case Time Complexity of removeUser(const string & k) in PassServer
+
+The worst-case time complexity of removeUser(const string & k) is O(n).
+
+Explanation:
+The removeUser() function first finds the correct bucket using a hash function (which takes O(1) time).
+ In the worst case, all n elements are in the same bucket, so it may need to search through all of them, resulting in O(n) time.
